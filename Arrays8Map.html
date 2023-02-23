@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var employees = [{
+            emp: 101,
+            name: "Anil",
+            sal: 250000
+        }, {
+            emp: 102,
+            name: "Suraj",
+            sal: 350000
+        }, {
+            emp: 103,
+            name: "Shubham",
+            sal: 500000
+        }, {
+            emp: 104,
+            name: "Rahaman",
+            sal: 400000
+        }]
+        let arr1 = [];
+        for (ele of employees) {
+            const newObj = {};
+            newObj.emp = ele.emp;
+            newObj.sal = ele.sal;
+            arr1.push(newObj);
+        }
+        console.log(arr1);
+
+        let arr2 = employees.map((ele) => {
+            return {
+                emp: ele.emp,
+                sal: ele.sal
+            };
+        })
+        console.log(arr2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let employees = [{
+            emp: 101,
+            name: "anil",
+            sal: 25000
+
+        }, {
+            emp: 102,
+            name: "rahul",
+            sal: 40000
+
+        }, {
+            emp: 103,
+            name: "Kiran",
+            sal: 80000,
+
+        }, {
+            emp: 104,
+            name: "reena",
+            sal: 90000
+        }, {
+            emp: 105,
+            name: "sohan",
+            sal: 7000
+
+        }, {
+            emp: 106,
+            name: "suneeta",
+            sal: 100000
+        }, {
+            emp: 107,
+            name: "suneeta",
+            sal: 100000
+        }, {
+            emp: 108,
+            name: "suneeta",
+            sal: 100000
+        }];
+        //this are the finding the accprding to emp id
+        let emp = employees.find((ele) => ele.emp == 101)
+        console.log(emp);
+
+        //this si the find the according to sal
+        let emp1 = employees.findIndex((e) => e.sal == 100000)
+        console.log(emp1);
+
+        //this is the finding the according to last cloumn name
+        let emp3 = employees.findLast((c) => c.sal == 100000)
+        console.log(emp3)
+
+        //this is the finding all sal 100000 
+        let emp4 = employees.find((e) => e.sal == 100000)
+        console.log(emp4);
+    </script>
+</body>
+
+</html>

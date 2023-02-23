@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Adding and removing items during map()
+        // list of words from a list of sentences			
+        let arr1 = ["js is single threaded", "js is synchronous", "js is object oriented"];
+        res1 = arr1.map(sentence => sentence.split(" "));
+        console.log(res1);
+
+        res2 = arr1.flatMap(sentence => sentence.split(" "));
+        console.log(res2);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [10, 20, 30, 40, 50, 60, 70]
+        let indx = a.indexOf(30);
+        console.log(indx)
+
+        let ins = a.findIndex((els) => els == 30);
+        console.log(ins);
+        let inp = a.find((ele) => ele == 30)
+        console.log(inp);
+        //find means print the value not print index suppose 30 then print only 30 not 2
+    </script>
+</body>
+
+</html>
